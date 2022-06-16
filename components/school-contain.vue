@@ -5,7 +5,7 @@
       <titleBar :title="this.title" />
 
       <!-- 手機版 & 三個(以上)的版本，有 loop -->  
-      <div v-if="frames.length >= 3 || currentWidth < 1024" class="school-swiper-outer-box">
+      <div v-if="frames.length >= 3 || (currentWidth < 1024 && frames.length > 1)" class="school-swiper-outer-box">
         <swiper class="swiper school-swiper" :options="swiperOption" ref="mySwiper">
           <swiper-slide class="school-swiper-slide"
             v-for="(frame, index) in frames"
@@ -29,6 +29,9 @@
           <img v-if="slide.isShowPrev" @click="prevSlide()" class="school-swiper-prev" src="@/assets/img/icon/left-arrow.png" alt="prev">
           <img v-if="slide.isShowNext" @click="nextSlide()" class="school-swiper-next" src="@/assets/img/icon/right-arrow.png" alt="next">
       </div>
+
+      <!-- 手機版 只有一個 -->
+
 
       <!-- 桌面版一個、兩個，沒有 loop -->
       <div v-else class="school-swiper-outer-box">
@@ -111,9 +114,9 @@ export default {
         },
         on: {
           resize: () => {
-            setTimeout(()=> {
-              this.$router.push('/blank')
-            }, 500)
+            // setTimeout(()=> {
+            //   this.$router.push('/blank')
+            // }, 500)
           },
         }
       },
@@ -125,20 +128,40 @@ export default {
         spaceBetween: 75,
         observer:true,
 			  observeParents:true,
+        breakpoints: {
+          1023: {
+            slidesPerView: "auto",
+            // centeredSlides: false,
+            spaceBetween: 75,
+          },
+          1022: {
+            slidesPerView: "auto",
+            spaceBetween: 75,
+          },
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+          },
+        },
         on: {
           resize: () => {
-            setTimeout(()=> {
-              this.$router.push('/blank')
-            }, 500)
+            // setTimeout(()=> {
+            //   this.$router.push('/blank')
+            // }, 500)
           },
         }
       },
     }
   },
   mounted () {
-    this.mySwiper.slideTo(1)
-    this.mySwiper.slideTo(0)
     this.currentWidth = screen.width
+    if(this.currentWidth > 1023) {
+      this.mySwiper.slideTo(1)
+      this.mySwiper.slideTo(0)
+    } else {
+      this.mySwiper.slideTo(1)
+    }
+    
     this.mySwiper.on('slideChange', () => {
       
     })
@@ -343,7 +366,6 @@ export default {
       width: 210px;
       font-size: 16px;
     }
-
 
     &-prev {
       left: calc(50% - 162px);
