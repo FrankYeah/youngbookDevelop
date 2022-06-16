@@ -27,7 +27,7 @@ export default {
   },
   data () {
     return {
-      detail: { img: require('@/assets/img/article/n08/2.jpg'), position: 'r', name: '士林高商', place: 'n', title: '滄海一栗', desc: '狐狸', content: '從地面的角度看上去，人就像小小的一粒米在廣大的書海中飄遊著，被包裹在常常得書的走廊另一個盡頭', link: '10802' }
+      detail: { img: require('@/assets/img/article/n08/2.jpg'), position: 'r', name: '士林高商', place: 'n', title: '滄海一栗', desc: '狐狸', content: '從地面的角度看上去，人就像小小的一粒米在廣大的書海中飄遊著，<br>被包裹在書櫃間長長廊道的盡頭。', link: '10802' }
     }
   },
   computed: {

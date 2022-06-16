@@ -817,7 +817,7 @@ export default {
 
     &-popup-south {
       top: 180px;
-      right: 150px;
+      right: 120px;
     }
 
     &-icon-south {
