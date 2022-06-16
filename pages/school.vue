@@ -29,15 +29,18 @@ export default {
       place: '',
       isShowH: false,
       isShowU: false,
-      isFromInsidePage: false
+      isFromIndexPage: false
     }
   },
   beforeRouteEnter(to, from, next) {
     next(vm => {
-      // 判斷是否從內頁過來
+      // 判斷是否從首頁過來
+      // console.log(from.name)
+      // console.log(from)
       if(from.name) {
-        if(from.name.substr(0, 8) == 'schoolin') {
-          vm.isFromInsidePage = true
+      console.log(from.name.substr(0, 5))
+        if(from.name.substr(0, 8) == 'index') {
+          vm.isFromIndexPage = true
         }
       }
       vm.prevRoute = from
@@ -82,9 +85,10 @@ export default {
         // 改 title
         this.title = this.schoolList[i].name
         // 判斷大學
-        if(!this.isFromInsidePage) {
+
+        if(this.isFromIndexPage) {
           this.showAnimate(this.schoolList[i].type)
-          this.isFromInsidePage = false
+          this.isFromIndexPage = false
         }
         
       }

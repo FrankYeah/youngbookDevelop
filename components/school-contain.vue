@@ -114,9 +114,9 @@ export default {
         },
         on: {
           resize: () => {
-            // setTimeout(()=> {
-            //   this.$router.push('/blank')
-            // }, 500)
+            setTimeout(()=> {
+              this.$router.push('/blank')
+            }, 500)
           },
         }
       },
@@ -145,9 +145,9 @@ export default {
         },
         on: {
           resize: () => {
-            // setTimeout(()=> {
-            //   this.$router.push('/blank')
-            // }, 500)
+            setTimeout(()=> {
+              this.$router.push('/blank')
+            }, 500)
           },
         }
       },
