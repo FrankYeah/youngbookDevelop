@@ -43,7 +43,7 @@ export const schoolList = [
   { img: require('@/assets/img/article/m02/2.jpg'), position: 'v', type: 'h', name: '新社高中', place: 'm', title: '寧靜的午後時光', desc: 'Sam', content: '在中午過後的學校裡，充滿著溫暖的陽光與寧靜的時光，在此時拿起一本自己喜歡的書閱讀吧！', link: '20202' },
   
   { img: require('@/assets/img/article/s01/1.jpeg'), position: 'v', type: 'h', name: '新營高中', place: 's', title: '沉浸', desc: 'Giga', content: '整天不僅沉浸在書本裡，也沉浸在這美麗的校園', link: '30101' },
-  { img: require('@/assets/img/article/s01/2.jpg'), position: 'v', type: 'h', name: '新營高中', place: 's', title: '被藏匿的烏托邦', desc: '小一', content: '在平日的下午，我身在圖書館前的一座小石椅上，心賞眼前的一片風景，閱覽著富含豐富知識的英文雜誌，愜意地感受風吹拂著臉龐，此刻的我，感到非常的幸福。', link: '30102' },
+  { img: require('@/assets/img/article/s01/2.jpg'), position: 'v', type: 'h', name: '新營高中', place: 's', title: '被藏匿的烏托邦', desc: '小一', content: '在平日的下午，我身在圖書館前的一座小石椅上，欣賞眼前的一片風景，閱覽著富含豐富知識的英文雜誌，愜意地感受風吹拂著臉龐，此刻的我，感到非常的幸福。', link: '30102' },
   { img: require('@/assets/img/article/s01/3.jpg'), position: 'v', type: 'h', name: '新營高中', place: 's', title: '我的閱讀角落', desc: '陳宜庭', content: '學校的每個小角落,都是我增長知識的小天地', link: '30103' },
   { img: require('@/assets/img/article/s01/4.jpg'), position: 'v', type: 'h', name: '新營高中', place: 's', title: '閱讀森林', desc: '小菜', content: '學校的鞦韆旁有許許多多的大樹，讓人彷彿置身於森林中，坐在鞦韆上讀書讀累了就欣賞一下附近那些綠意盎然的樹，這種讀書的氛圍讓人感到很放鬆，但，同時又能進入自己的小小世界！', link: '30104' },
   { img: require('@/assets/img/article/s01/5.jpg'), position: 'v', type: 'h', name: '新營高中', place: 's', title: '閱讀小工坊', desc: '小菜', content: '學校的圖書館旁有一間小木屋，裡面有著木頭的香味，眼前的落地窗能將面前美好的風景盡收眼底，讓人自由自在的在書海暢遊，屏蔽外界的紛擾！', link: '30105' },

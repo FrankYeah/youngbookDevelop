@@ -27,7 +27,7 @@ export default {
   },
   data () {
     return {
-      detail: { img: require('@/assets/img/article/s01/2.jpg'), position: 'v', type: 'h', name: '新營高中', place: 's', title: '被藏匿的烏托邦', desc: '小一', content: '在平日的下午，我身在圖書館前的一座小石椅上，心賞眼前的一片風景，閱覽著富含豐富知識的英文雜誌，愜意地感受風吹拂著臉龐，此刻的我，感到非常的幸福。', link: '30102' }
+      detail: { img: require('@/assets/img/article/s01/2.jpg'), position: 'v', type: 'h', name: '新營高中', place: 's', title: '被藏匿的烏托邦', desc: '小一', content: '在平日的下午，我身在圖書館前的一座小石椅上，欣賞眼前的一片風景，閱覽著富含豐富知識的英文雜誌，愜意地感受風吹拂著臉龐，此刻的我，感到非常的幸福。', link: '30102' }
     }
   },
   computed: {
